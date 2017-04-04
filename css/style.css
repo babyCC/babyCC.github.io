@@ -23,7 +23,14 @@ table { border-spacing:0; border-collapse:collapse;}
 .positiona{position: absolute;} 
 
 body{
-	/*background: url(../img/bg02.png);*/
+	/*width: 100%;
+	height: auto;*/
+}
+#wrapper{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	
 }
 #header-wrapper{
 	position: relative;
@@ -41,8 +48,8 @@ body{
 	/*background: url(../img/bg01.png) */
 		
 
-	width: 100%;
-	height: 100px;
+		width: 100%;
+		height: 100px;
 	    background-size: 100% 130%;
 	    opacity: 0.25;
 	
