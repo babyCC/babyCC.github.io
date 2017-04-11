@@ -21,7 +21,12 @@ table { border-spacing:0; border-collapse:collapse;}
 .clearfix:after { clear: both;}
 .positionr{position: relative;}
 .positiona{position: absolute;} 
-
+.br-line{
+	border-right: 1px solid #BEBCBC;
+	box-shadow: 5px 0px 0px #EEEEEE;/*模糊半径为0 其他边不显示阴影*/
+	
+	
+}
 body{
 	/*width: 100%;
 	height: auto;*/
@@ -29,14 +34,15 @@ body{
 #wrapper{
 	width: 100%;
 	height: auto;
-	
-	
+
+ 
 }
 #header-wrapper{
 	position: relative;
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
+	
 	/*text-align: center;*/
 	
 	
@@ -161,7 +167,7 @@ h1{
 	height: 450px;
 	background: url(../img/banner.jpg) no-repeat;
 	background-size: auto;
-	margin: 50px auto;	
+	margin: 20px auto;	
 }
 
 section.intro{
@@ -170,13 +176,105 @@ section.intro{
 	height: 300px;
 	margin: 0 auto;
 	
+	
 }
 section.intro .introa{
+	position: relative;
 	display: inline-block;
 	float: left;
-	width: 33.3%;
-	height: 300px;
-	background: #244666;
+	width: 33%;
+	height: 250px;
+	
+	
+	/*background: #244666;*/
+	
+}
+section.intro .introa .introaIcon{
+	position: relative;
+	width: 110px;
+	height: 150px;
+	
+	margin: 0 auto;
+	overflow: hidden;
+	
+}
+section.intro .introa .boxtext{
+	width:260px;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 20px;
+}
+section.intro .introa .introaIcon .top{
+	
+	width: 110px;
+	height: 100px;
+	margin: 0 auto;
+	background: #D52349;
+	border-radius: 5px 5px 0 0;
+	text-align: center;
+}
+section.intro .introa .introaIcon .laptop{
+	background: #252122;
+}
+section.intro .introa .introaIcon .mobile{
+	background: #827a7c;
+}
+section.intro .introa .introaIcon .top i{
+	padding-top: 25PX;
+	color: #FFFFFF;
+}
+
+section.intro .introa .introaIcon .bottom{
+	position: absolute;
+	top:99px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-top:30px solid #D52349;
+	border-right:56px solid transparent;
+	border-left:56px solid transparent;
+	
+}
+
+section.intro .introa .introaIcon .laptop-bt{
+	border-top:30px solid #252122;
+}
+section.intro .introa .introaIcon .mobile-bt{
+	border-top:30px solid #827a7c;
+}
+section.intro .introa .introaBox .top{
+	width: 130px;
+	height: 90px;
+	border-radius: 8px 8px 0 0;
+	background: #D52349;
+	text-align: center;
+	vertical-align: middle;
+}
+section.intro .introa .introaBox .laptop{
+	background:#252122 ;
+}
+section.intro .introa .introaBox .mobile{
+	background:#827a7c ;
+}
+section.intro .introa .introaBox .bottom{
+	
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    border-top: solid 2em #d52349;
+    border-left: solid 4.1em transparent;
+    border-right: solid 4.1em transparent;
+}
+section.intro .introa .introaBox .lap{
+	 border-top: solid 2em #252122;
+    border-left: solid 4.1em transparent;
+    border-right: solid 4.1em transparent;
+}
+section.intro .introa .introaBox .mob{
+	 border-top: solid 2em #827a7c;
+    border-left: solid 4.1em transparent;
+    border-right: solid 4.1em transparent;
 }
 section.intro .introb{
 	display: inline-block;
@@ -225,7 +323,7 @@ section.intro .introc{
 }
 #main-wrapper{
 	width: 100%;
-	height: 2000px;
+	height: 1000px;
 	margin: 0 auto;
 	background: url(../img/bg02.png);
 	border-top: 1px solid #BEBCBC;
@@ -292,10 +390,54 @@ h2{
 	background: #fff;
 	margin: 0 12px;
 	margin-bottom: 30px;
+	overflow: hidden;
 }
 
-#main-wrapper .container img{
+#main-wrapper .container .image{
 	width: 100%;
+	height: 265px;
+	background: url(../img/dog.jpg);
+	background-size: 100% 100%;
+	transition: 1s all;
+	
+}
+#main-wrapper .container .image:hover{
+	-moz-transform:scale(1.04);
+    -webkit-transform:scale(1.04);
+    -o-transform:scale(1.04);
+    transform: scale(1.04);
+    transition: 1s all;
+
+}
+#main-wrapper .container .imageFlow:hover{
+	-moz-transform:scale(1.04);
+    -webkit-transform:scale(1.04);
+    -o-transform:scale(1.04);
+    transform: scale(1.04);
+    transition: 1s all;
+
+}
+#main-wrapper .container .imagetra:hover{
+	-moz-transform:scale(1.04);
+    -webkit-transform:scale(1.04);
+    -o-transform:scale(1.04);
+    transform: scale(1.04);
+    transition: 1s all;
+
+}
+#main-wrapper .container .imageFlow{
+	width: 100%;
+	height: 265px;
+	background: url(../img/huahua.jpg) no-repeat;
+	background-size: 100% 100%;
+	transition: 1s all;
+}
+#main-wrapper .container .imagetra{
+	width: 100%;
+	height: 265px;
+	background: url(../img/tra.jpg) no-repeat;
+	background-size: 100% 130%;
+	transition: 1s all;
 }
 #main-wrapper .container .textbox{
 	position: relative;
