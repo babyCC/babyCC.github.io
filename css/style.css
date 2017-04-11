@@ -27,16 +27,7 @@ table { border-spacing:0; border-collapse:collapse;}
 	
 	
 }
-body{
-	/*width: 100%;
-	height: auto;*/
-}
-#wrapper{
-	width: 100%;
-	height: auto;
 
- 
-}
 #header-wrapper{
 	position: relative;
 	width: 100%;
@@ -59,6 +50,9 @@ body{
 }
 
 h1{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
 	font-family: "Microsoft YaHei";
 	font-size:4em;
 	text-align: center;
@@ -165,8 +159,8 @@ h1{
 	
 	width: 1200px;
 	height: 450px;
-	background: url(../img/banner.jpg) no-repeat;
-	background-size: auto;
+	background: url(../img/banner1.jpg) no-repeat;
+	background-size: 100% 100%;
 	margin: 20px auto;	
 }
 
@@ -291,19 +285,25 @@ section.intro .introc{
 	background: #FF5500;
 }
 .actions{
-	width: 600px;
+	width: 1200px;
 	height: 80px;
 	margin: 10px auto;
+	
+	
+}
+.actions .actionsbox{
+	width: 800px;
+	height: 80px;
+	margin: 0 auto;
 	color: #fff;
 	font-size: 1.5em;
 	line-height: 58px;
 	text-align: center;
-	
 }
-.actions .actionsLeft{
+.actions .actionsbox .actionsLeft{
 	display: inline-block;
 	/*float: left;*/
-	margin-right: 20px;
+	/*margin-right: 20px;*/
 	width: 264px;
 	height: 58px;
 	border-radius: 5px;
