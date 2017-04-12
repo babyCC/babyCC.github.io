@@ -27,7 +27,11 @@ table { border-spacing:0; border-collapse:collapse;}
 	
 	
 }
-
+#wrapper{
+	min-width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
 #header-wrapper{
 	position: relative;
 	width: 100%;
@@ -159,8 +163,8 @@ h1{
 	
 	width: 1200px;
 	height: 450px;
-	background: url(../img/banner1.jpg) no-repeat;
-	background-size: 100% 100%;
+	background: url(../img/banner.jpg) no-repeat;
+	background-size:100% 120%;
 	margin: 20px auto;	
 }
 
@@ -587,34 +591,46 @@ h2{
 	width: 150px;
 	height: 150px;
 }
-/*#footer-wrapper div.friend{
-	display: inline-block;
-	width: 30%;
-	height: 250px;
-	background: red;
-}
-#footer-wrapper div.wechat{
-	display: inline-block;
-	width: 30%;
-	height: 250px;
-	background: #244666;
-}*/
-/*#footer-wrapper div{
-	display: inline-block;
-	
-	width: 25%;
-	height: 200px;
-	/*padding-right: 10px;*/
-	/*border-right: 1px solid #858484;*/
+
+.service{
+	position: fixed;
+	right: 0;
+	top:45%;
+	width: 55px;
+	height: 168px;
+	background: #000;
+}	
+.service div{
+	width: 55px;
+	height: 33%;
+	border-bottom: 1px solid #FFFFFF;
+	text-align: center;
 	
 }
-/*.aboutVlin{
-	background: pink;
+.service div:hover{
+	background: #252122;
 }
-.friend{
-	background: #244666;
+.service .qq .qqicom{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: url(../img/qq.png) no-repeat;
+	background-size: 100% 100%;
+	margin-top: 8px;
 }
-.wechat{
-	background: #FF5500;
+.service .wechat .wechaticon{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: url(../img/wc.png) no-repeat;
+	background-size: 100% 100%;
+	margin-top: 8px;
 }
-*/
+.service .top .topicon{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: url(../img/top.png) no-repeat;
+	background-size: 100% 100%;
+	margin-top: 8px;
+}
