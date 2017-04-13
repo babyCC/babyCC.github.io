@@ -64,12 +64,13 @@ h1{
 	
 }
 #header-wrapper .navbox{
-	width: 1200px;
-	height: 30px;
-	margin: 20px auto;
+	width: 100%;
+	height: 35px;
+	margin: 0 auto;
 	
 	text-align: center;
-	
+	background: #FFFFFF;
+	opacity: 0.9;
 	
 }
 
