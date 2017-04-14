@@ -1,0 +1,16 @@
+#main-wrapper{
+	text-align: center;
+}
+
+#main-wrapper p{
+	font-size: 36px;
+}
+
+#main-wrapper .gifbox{
+	width: 800px;
+	height: 400px;
+	margin: 0 auto;
+	background: url(../img/design.gif) no-repeat;
+	background-size: 100% 100%;
+	
+}
