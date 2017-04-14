@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>商旅优惠</title>
+    <link rel="stylesheet" href="css/master.css">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/ajax.js"></script>
+    <script type="text/javascript" src="js/lyz.calendar.min.js"></script>
+    
+    
+    
+</head>
+<body>
+   <div class="wrap">
+      <div class="header">
+         <div class="topbox">
+             <div class="topbox-info">
+                 <ul>
+                     <li class="br-line pr20">财富热线<b>40069-95568转2</b></li>
+                     <li class="br-line pl20 pr20"><a href="#">新手指南</a></li>
+                     <li class="br-line pl20 pr20">欢迎来到民生转赚！ <a href="#">[登录]</a> <a href="#">[注册]</a></li>
+                     <li class="pl194">
+                        <i class="app-icon"></i>
+                        <a href="#">下载APP</a>
+                        <div class="phone-pic"></div>
+                    </li>
+                      
+                    <li class="br-line pr20 pl56">
+                       <i class="wechat-icon"></i>
+                       <a href="#">关注微信</a>
+                       <div class="wechat-pic"></div>
+                    </li>
+                    <li class="br-line pl20 pr20 "><a href="#">帮助中心</a></li>
+                 </ul>
+             </div>
+         </div>
+         <div class="header-contain">
+             <div class="logo flt">
+                 <img src="img/logo.png">
+             </div>
+             <div class="tabnav flr">
+                <ul>
+                    <li><a href="http://www.minshengec.com/" target="_blank">购物</a></li>
+                    <li><a href="http://www.msyidai.com/index" target="_blank">投资</a></li>
+                    <li class="cur"><a href="#">资产</a></li>
+                </ul>
+             </div>
+             
+         </div>
+          
+      </div>
+      <div class="nav">
+          <div class="navbox">
+             <ul>
+                 <li><a href="mszz.html" style="text-align:center;">首页</a></li>
+                 <li><a href="#">我要订制</a></li>
+                 <li><a href="#">我要赚钱</a></li>
+                 <li><a href="#">转让专区</a></li>
+                 <li><a href="#">我的账户</a></li>
+                 <li class="cur"><a href="#" >商旅优惠</a></li>
+             </ul> 
+          </div>
+      </div>
+        <div class="service">
+          <div class="service-top">
+              <div class="on-line-service flt"></div>
+              <div class="service-list frt">
+                  <button><a href="http://wpa.qq.com/msgrd?v=3&uin=2982879484&site=qq&menu=yes" target="_blank">QQ客服MM01</a></button>
+                  <button><a href="http://wpa.qq.com/msgrd?v=3&uin=2982879484&site=qq&menu=yes" target="_blank">QQ客服MM02</a></button>
+                  <button><a href="http://wpa.qq.com/msgrd?v=3&uin=2982879484&site=qq&menu=yes" target="_blank">加入官方QQ群</a></button>
+              </div>
+          </div>
+          <div class="service-detail frt">
+              <p>工作时间：<br> 9：00-18:00</p><!--<br>是换行符号-->
+              
+              <p>客服热线：<br>40069-95568转2</p>
+          </div>
+          <div class="service-button frt">
+              <img src="img/qian.jpg">
+              <p style="color:#fff;margin-left:40px;">扫码下载APP</p>
+              <button><a href="#">常见问题</a></button>
+              <button><a href="#">新手指南</a></button>
+          </div>
+      </div>
+       <div class="contain">
+           <div class="bgimg">
+               <div class="bookbox" >
+                   <div class="booktype">
+                       <span class="active ticket"><a href="javascript:">机票</a></span>
+                       <span class="hotel"><a href="javascript:">酒店</a></span>
+                       
+                   </div>
+                   <div class="book-hotel hide">
+                      <p>
+                           <span>国内酒店</span>
+                           <i class="bot-line">
+                               <i class="bot-inline">
+                                   <i class="triangle-up"></i>
+                               </i>
+                           </i>
+                       </p>
+                       <p  >
+                           <span>入住城市</span>
+                           <input type="text" class="long-input">
+                           
+                          
+                           
+                           
+                       </p>
+            
+                       
+                          
+                        <p>
+                           <span>入住日期</span>
+                           <input type="text"  class="long-input">
+                           
+                       </p>
+                       <p>
+                           <span>退房日期</span>
+                           <input type="text"  class="long-input">
+                           
+                       </p>
+                       <p>
+                           <span>关键字&ensp;&ensp;</span>
+                           <input type="text" placeholder="酒店/地名/行政区"
+                            style="height:30px;">
+                           
+                       </p>
+                       
+                       <button><a href="#">搜索</a></button>
+                       
+                   </div>
+                   <div class="book-con">
+                       <p>
+                           <span>国内机票</span>
+                           <i class="bot-line">
+                               <i class="bot-inline">
+                                   <i class="triangle-up"></i>
+                               </i>
+                           </i>
+                       </p>
+                       <p>
+                           <span>航程类型</span>
+                           <label><input type="radio"  name="ticket" value=""/>单程</label>
+                           <label><input type="radio" name="ticket" value=""/>返程</label>
+                           <label><input type="radio" name="ticket" value=""/>联程</label>
+                       </p>
+                       <p>
+                           <span >出发城市</span>
+                           <input class="long-input mudidi" type="text" >
+                           
+                       </p>
+                       <div class="citylist hide">
+                           <p>热门城市（可直接选择城市或输入城市中文/拼音）</p>
+                           <div class="hot-city">
+                               <span>热门</span>
+                               <ul class="CityList">
+                                   
+                                   
+                               </ul>
+                               <p class="close flt" ><a href="javascript:">[关闭]</a></p>
+                           </div>
+                           
+                           
+                       </div>
+                        <p>
+                           <span>到达城市</span>
+                           <input type="text"  class="long-input">
+                           
+                           
+                       </p>
+                        <p>
+                           <span>出发日期</span>
+                           <input  id="txtBeginDate"  type="text"  class="short-input">
+                           
+                       </p>
+                        <p>
+                           <span>返回日期</span>
+                           <input type="text"  class="short-input">
+                           
+                       </p>
+                       
+                      
+                       <button><a href="#">搜索</a></button>
+                   </div>
+                   <div id="citys">
+                       <ul></ul>
+                   </div>
+               </div>
+               <img src="img/adver.png" alt="活动说明" class="adver">
+               <div class="adverText">
+                   <p class="pl20">
+                       <span>如何获得返还机会？</span>
+                       <img src="img/bar.png" style="margin-top:10px">
+                   </p>
+                   <p class="pl20">
+                       <span>注意事项</span>
+                       
+                       <li>1、此次活动仅针对民生转赚的注册用户，参与活动的用户需先登录民生转赚账号，并通过点击我要购买按钮，页面会自动跳转腾邦国际官网，才能获得返还金额，若直接打开腾邦国际官网完成购买，将无法获得返还的资金。</li>
+                       <li>
+                       2、对于任何通过不正当手段参与活动者，民生转赚有权在不事先通知的情况下取消其参加活动及得奖资格。</li>
+                       <li>
+                    3、民生转赚不对包括因网络传输原因在内的各种原因而导致参加者提交的信息错误承担任何责任。</li>
+                       <li>
+                       4、如遇不可抗力因素，或本次活动因故无法进行时，民生转赚有权决定取消、终止、修改或暂停本活动，民生转赚有提前终止或延长活动之权利。</li>
+                   
+                   </p>
+                    
+                   
+               </div>
+           </div>
+           
+       </div>
+          
+           
+          <div class="foot">
+           <div class="partner">
+               <span style="font-size:18px;color:#6c6969;padding:0 10px;">合作伙伴</span>
+               <div class="partner-box">
+               <ul>
+                   <li>
+                       <a class="ms" target="—blank" href="http://www.cmbc.com.cn/">
+                                    </a>
+                   </li>
+                   
+                   <li>
+                       <a class="xinda" target="—blank" href="http://www.cindamc.com/">
+                                    </a>
+                   </li>
+                   <li>
+                       <a class="wd" target="—blank" href="http://www.wdzj.com/">
+                                    </a>
+                   </li>
+                   <li>
+                       <a class="byht" target="—blank" href="https://www.umbpay.com/">
+                                    </a>
+                   </li>
+                   <li>
+                       <a class="wdty" target="—blank" href="http://www.p2peye.com/">
+                                    </a>
+                   </li>
+                   <li>
+                       <a class="tb" target="—blank" href="http://www.tempusworld.com/">
+                                    </a>
+                   </li>
+               </ul>
+               </div>
+           </div>
+           
+           <div class="about-us">
+              <div class="about-all">
+               <span >
+                  <i class="aboutus"></i>
+                   
+                   <ul class="br-line pr20 ">
+                       <li><a href="#" style="font-size:18px;">关于我们</a></li>
+                       <li><a href="#">平台介绍</a></li>
+                       <li><a href="#">公司简介</a></li>
+                       <li><a href="#">联系我们</a></li>
+                   </ul>
+               </span>
+               <span >
+                  <i class="help-center  "></i>
+                   <ul class="br-line pr20 ">
+                       <li><a href="#" style="font-size:18px;">帮助中心</a></li>
+                       <li><a href="#">新手指南</a></li>
+                       <li><a href="#">常见问题</a></li>
+                       <li><a href="#">安全保障</a></li><li><a href="#">收费标准</a></li>
+                   </ul>
+               </span>
+               
+                
+               <span >
+                    <ul style='font-size:14px;color:#484848;'>&ensp;&ensp;&ensp;&ensp;&ensp;扫码关注
+                        <p>关注民生转赚服务号</p>
+                        </ul>
+                   <i class="code-app"></i>
+               </span>
+               <span >
+                    <ul style='font-size:14px;color:#484848;'>&ensp;&ensp;&ensp;&ensp;&ensp;扫码下载
+                        <p>下载民生转赚APP</p>
+                        </ul>
+                   <i class="mszz-app"></i>
+               </span>
+                 
+                  <i class="mszz-logo"></i>
+                  <select class="fdlink" onchange="window.location=this.value">这句话可以让网址实现跳转
+                      <option value="http://www.cmbc.com.cn/">民生电商旗下网站</option>
+                      <option value="http://creditcard.cmbc.com.cn/">电商购物商城</option>
+                  </select>
+                  <div class="linkway frt">
+                     
+                         
+                         
+                         <p class="ai" >全国服务热线（工作时间9:00-18:00）</p>
+                         <p class="phone-num">40069-95568转2</p>
+                         <p>QQ客服群：190981016</p>
+                         <p>客服邮箱：service@mszhuanzhuan.com</p>
+                         
+                         </div>
+                  
+              
+               </div>
+       </div>
+       
+           
+       </div>
+       <div class="bottom">
+           <p>Copyright 2015 mszhuanzhuan.com All Rights Reserved <i>粤ICP备13067411号-8</i></p>
+       </div>
+       <div class="calbd hide"> </div>
+       <div class="calbox hide">
+           <div class="cal-title">
+               <p>收益计算器</p>
+               <a href='javascript:' class="off frt">×</a>
+           </div>
+           <div class="cal-body">
+               <div class="cal-contain">
+                   <p>
+                       <span>还款方式</span>
+                       <input type="text" value="一次性还本息" disabled="disabled">   
+                   </p>
+                   <p>
+                       <span>投资金额(元):</span>
+                       <input id="invest" type="text" value=""/>   
+                   </p>
+                   <p>
+                       <span>年化收益率:</span>
+                        <input id="year" type="text" value="12.00">   
+                   </p>
+                   <p>
+                       <span>借贷期限:</span>
+                       <input id="deadline" type="text" value="7" disabled="disabled">
+                       <i>天</i>
+                   </p>
+                   <p>
+                       <span>预期收益:</span>
+                       <em id="earnings"></em>
+                       元
+                   </p>
+                   <p>
+                       <span>预期本息合计:</span>
+                       <em id="total"></em>
+                       元
+                   </p>
+                   <div class="bom-bt mag">
+                       <button id="count"><a href="javascript:">计算收益</a></button>
+                   </div>
+               </div>
+
+           </div>
+       </div>
+          
+           
+      
+       
+   </div>
+    <script>
+    $('.booktype span').on('click',function(){
+        $(this).addClass('active')
+        .siblings().removeClass('active');
+    });
+        $('.ticket').on('click',function(){
+         $('.book-con').removeClass('hide')
+         $('.book-hotel').addClass('hide')
+        });
+        $('.hotel').on('click',function(){
+         $('.book-con').addClass('hide')
+         $('.book-hotel').removeClass('hide')
+        });
+        
+    </script>
+   <!--计算器计算方式-->
+    <script>
+    $('#count').on('click',function(){
+      var touzijine = Number($('#invest').val());//把val变成数值        
+      var shouyilv = ($('#year').val())/100; 
+      var rateDate =  Number($('#deadline').val());
+      var res = (rateDate/365*shouyilv*touzijine).toFixed(2);//保留小数点后两位数
+      var win = res;
+        var winTotal=Number(win)+Number(touzijine);
+        var earning =$('#earnings')
+        var total =$('#total');
+        earning.html(win);
+        total.html(winTotal);
+    });
+        
+    </script>
+    
+    
+    
+    <script>
+    $('.mudidi').on('click',function(){
+                    $('.citylist').removeClass('hide')
+    });
+         
+        $('.close').on('click',function(){
+                    $('.citylist').addClass('hide')
+                    });
+                    
+       
+    </script>
+    
+    
+    //获取了json，但无法实现选中
+    <script>
+        $('.CityList li').click(function(res){
+           var index = $(this).text();   
+           $('.mudidi').val(index);
+        });
+    </script>
+    <script>
+
+    $(function () {
+
+        $("#txtBeginDate").calendar({
+
+            controlId: "divDate",                                 // 弹出的日期控件ID，默认: $(this).attr("id") + "Calendar"
+
+            speed: 200,                                           // 三种预定速度之一的字符串("slow", "normal", or "fast")或表示动画时长的毫秒数值(如：1000),默认：200
+
+            complement: true,                                     // 是否显示日期或年空白处的前后月的补充,默认：true
+
+            readonly: true,                                       // 目标对象是否设为只读，默认：true
+
+            upperLimit: new Date(),                               // 日期上限，默认：NaN(不限制)
+
+            lowerLimit: new Date("2011/01/01"),                   // 日期下限，默认：NaN(不限制)
+
+            callback: function () {                               // 点击选择日期后的回调函数
+
+                /*alert("您选择的日期是：" + $("#txtBeginDate").val());*/
+
+            }
+
+        });
+    });
+    </script>
+    
+    <script>
+          $(function(){
+          $('.txtBeginDate').on('click',function(){
+          $('.calendar').removeClass('hide')
+          })
+          });
+    </script>
+    
+    <!--饼状图-->
+    <script>
+    $(function () {
+    $('#zzdate').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false
+        },
+        title: {
+            text: '赚友投资金额分布',
+            floating: true,
+            y:160,
+             style: {
+                color: '#7b7979',
+                fontSize: '10px'
+            }
+            
+            
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        legend: {
+           layout:'vertical',//水平分布
+            align:'left',
+            y:-30
+             
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: false
+                },
+                showInLegend: true
+            }
+        },
+        series: [{
+            
+            type: 'pie',
+            name: '转赚数据',
+            data: [
+                ['5-50万',   44.4],
+                
+                
+                ['50-100万',    13.9],
+                ['100万以上',     24.2],
+                ['5万以下',   17.5]
+            ],
+            
+            
+            
+        }]
+    });
+});
+
+
+    </script>
+    
+    
+   <!-- 导航图滚动到一定高度后，定位在页头。-->
+    <script>
+    $(window).scroll(function(){    
+		if($(window).scrollTop()>=5){//scrollTop:设置或获取位于对象最顶端和窗口中可见内容的最顶端之间的距离
+			$(".nav").css({
+				position:"fixed",//生成绝对定位的元素，相对于浏览器窗口进行定位。
+				top:0,
+				zIndex:99,
+			});
+		}else{
+			$(".nav").css({
+				position:"static"//static默认值。没有定位，元素出现在正常的流中
+			});
+		}
+	});
+    </script>
+  <!--客服窗口的隐藏和显示-->  
+    
+    <script>
+        $('.service').css('right','-150px')
+        $('.on-line-service').on('mouseover',function(){
+        $('.service').css('right','0')
+        });
+        $('body').on('click',function(){
+         $('.service').css('right','-150px');
+        })
+    
+    </script>
+    <!--计算器界面显示和关闭-->
+    <script>
+    $(function(){
+     $('body').on('click','.icon-cal',function(){
+       $('.calbd').removeClass('hide');
+         $('.calbox').removeClass('hide');
+     });
+        $('.off').click(function(){
+        $('.calbd').addClass('hide');
+         $('.calbox').addClass('hide');
+        });
+        
+    });
+    </script>
+    
+    <script>
+        $('.icon-cal').on('click',function(){
+         $('.calbd').removeClass('hide'); $('.calbox').removeClass('hide');
+            
+        });
+        $('.off').on('click',function(){
+         $('.calbd').addClass('hide'); $('.calbox').addClass('hide');
+        });
+        
+    
+    </script>
+   
+</body>
+</html>

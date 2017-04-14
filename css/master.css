@@ -1,0 +1,1280 @@
+@charset "utf-8";
+/* reset style */
+body,div,p,ul,ol,dl,dt,dd,li,form,input,table,th,td,img,h1,h2,h3,h4,h5,h6 { margin: 0;padding: 0;}
+
+body { background: #FFF; color: #000; font-size: 12px; font-style: normal; font-family:'Microsoft Yahei','微软雅黑','Simsun','宋体','Arial', sans-serif;}
+em, b, i { font-style:normal;}
+li { list-style:none;}
+img { border:none;}
+a{text-decoration:none; color:#244666;}
+a:hover { text-decoration:underline; color:#f50;}
+table { border-spacing:0; border-collapse:collapse;}
+
+/* public style */
+.hide {display: none;}
+.show {display: block;}
+.flt {float:left;}
+.frt {float:right;}
+.clearfix { *zoom: 1;} 
+.clearfix:before, .clearfix:after { display: table; line-height: 0; content: "";}
+
+.clearfix:after { clear: both;}
+.positionr{position: relative;}
+.positiona{position: absolute;} 
+.wrap{
+    min-height: 600px;
+    margin: 0 auto;
+}
+.header{
+   height: 123px;
+    
+}
+.topbox{
+    height: 35px;
+    background: #f8f8f8;
+    border-bottom: 1px solid #a8a2a2;
+    
+}
+.topbox-info{
+    width: 960px;
+    height: 35px;
+    margin: auto;
+    position: relative;
+}
+.topbox-info ul li{
+    float:left;
+    font-size: 13px;
+    line-height: 35px;//字的行高等于框架的高度 就是出于居中的位置
+    
+}
+.br-line{
+  border-right: 1px solid #a8a2a2;
+}
+.pr20{
+ padding-right: 20px;
+}
+.pl20{
+padding-left: 20px;}
+
+.pl194{
+padding-left: 160px;}
+.pl56{
+    padding-left: 56px;
+}
+
+.app-icon{
+    background: url(../img/phone.png);  
+    top:6px;             
+    left: 640px; 
+    /*app-icon和wechat-icon是两个图标，此类型的图标用<i>标签表示，css上的background引用图片地址，要设置图片所占的长高：
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    显示设置为行内块状
+    display：inline-block;
+    position：absolute；
+    把两个元素的相同元素写在一起，不同的分开写 有助于代码整洁清晰*/
+   
+}
+.wechat-icon{
+    background: url(../img/wechat.png);
+    top:6px;
+    left: 740px;
+}
+.app-icon,.wechat-icon{/*同级用逗号隔开*/
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+}
+.phone-pic{
+   
+    background: url(../img/msapp.png);
+    top:25px;
+    left: 610px;
+       
+}
+.wechat-pic{
+    background: url(../img/wechats.png);
+    top:25px;
+    left: 720px;    
+}
+.phone-pic,.wechat-pic{
+    width: 160px;
+    height: 175px;
+    z-index: 10;
+    position: absolute;
+    display: none;
+}
+.topbox-info .pl194:hover .phone-pic{
+    display: block;
+}
+.topbox-info li:hover .wechat-pic{
+  display: block;
+}
+.header-contain{
+   width: 960px;
+    height: 88px;
+    margin: auto;
+}
+.logo{
+ padding:20px 0;
+}
+.flr{
+float: right;
+}
+.header-contain .tabnav ul li{
+   
+  float: left;
+    background: #141c80;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px 15px 0 0;
+    margin-left: 1px;   
+}
+.header-contain .tabnav ul li a{
+ color: #a7a5a5;
+    font-size: 16px;
+    line-height: 40px;
+    padding-left: 35px;
+    
+}
+.tabnav{
+ margin-right: 50px;
+    margin-top: 48px;
+}
+.tabnav ul li.cur{
+    background: #0b3dc3;
+}
+.tabnav ul li.cur a{
+ color: #fff;
+}
+.nav{
+ width: 100%;
+    height: 39px;
+    background: #0b3dc3;
+}
+.navbox{
+ width: 960px;
+    height: 38px;
+    margin: auto;
+}
+.navbox ul li{
+   float: left;
+    width: 160px;
+    height: 38px;
+}
+.navbox ul li a{
+ font-size: 16px;
+    color: #fff;
+    line-height: 38px;
+    padding-left: 50px;
+}
+.navbox ul li.cur{
+ background: #46e552;
+}
+.navbox ul li:hover{
+   background: #46e552;
+    
+}
+.navbox ul li a:hover{
+   text-decoration: none;
+    
+}
+.focus{
+    width: 100%;
+    height: 300px;
+   
+}
+.slider{
+    height:300px;
+    position: relative; 
+}
+.slider li{
+cursor: pointer;
+}
+.slider ul li{
+display: none;
+    float: left;
+    
+}
+.slider ul li img{
+ width: 100%;
+    height:300px;
+    
+}
+
+.slider ul li.current{
+ display: block;
+}
+.dot-wraper{
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    }
+.dot-wraper a{
+    width: 12px;
+    height: 12px;
+    display: block;
+    border:1px solid #fff ;
+    border-radius: 100%;
+    float: left;
+    background: #fff;
+    margin-right: 10px;
+
+}
+.dot-wraper a.current{
+    border:1px solid blue;background: blue;
+}
+.ac_option .ac_prev{
+ background: url(../img/prev.png);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:110px;
+    left: 30px;
+}
+.ac_option .ac_next{
+ background: url(../img/next.png);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:110px;
+    right: 30px;
+}
+.login{
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+.loginbg{
+    width: 312px;
+    height: 258px;
+    background: #404c5d;
+    position: absolute;
+    top:20px;
+    right: 60px;
+    z-index: 6;
+    opacity: 0.8;    
+}
+.loginbox{
+   width: 312px;
+    height: 258px;
+    position: absolute;
+    top:20px;
+    right: 60px;
+    z-index: 7;
+}
+.input-row .username{
+ background: url(../img/username.png) no-repeat;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top:20px;
+    left:20px;
+}
+.input-row .passerword{
+ background: url(../img/pwd.png) no-repeat;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top:70px;
+    left:23px;
+}
+.input-row .chaticon{
+ background: url(../img/link.png) no-repeat;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top:120px;
+    left:21px;
+}
+.input-row{
+ width: 275px;
+    height: 35px;
+    margin: 15px 15px;
+}
+
+.input-row input{
+    width: 245px;
+    height: 30px;
+    padding-left: 30px; 
+    font-size: 16px;
+}
+.linkrow input{
+width: 110px;
+}
+.linkrow img{
+ float: right;
+    width: 120px;
+    height: 33px;
+}
+.loginbox button{
+ width: 278px;
+    height: 35px;
+   margin-left: 15px;
+    background: #f7152f;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px #580707;
+    
+}
+.loginbox button a{
+ font-size: 18px;
+    color: #fff;
+    
+}
+.tip a{
+ margin: 20px 20px;
+    color: #fff;
+    font-size: 13px;
+}
+.service{
+ width: 178px;
+    height: 530px;
+    position: fixed;/*生成绝对定位 根据浏览器设置的位置 */
+    top:50px;
+    right: 0;
+    z-index: 7;
+}
+.service-top{
+    width: 178px;
+    height: 128px;
+}
+.on-line-service{
+    width: 30px;
+    height:120px;
+   background: url(../img/ms-ico.png);
+    background-position: -242px -726px;
+   
+}
+.service-list{
+    width: 148px;
+ height:128px;
+    display: inline;
+    background: #5b70b5;
+}
+.service-list button{
+    width: 130px;
+    height: 30px;
+   
+    margin: 6px 8px;
+    border-radius: 4px;
+     box-shadow: 0 2px #3d4686;
+    border: none;
+    background: linear-gradient(#a8acdd, #4949b4); 
+    
+    
+}
+.adver{
+ position: absolute;
+    top:550px;
+    left: 350px;
+}
+.adverText{
+  width: 865px;
+    height: 470px;
+    margin: 1050px auto;
+    
+    
+}
+
+.adverText p span{
+ font-size: 18px;
+    color: #214db1;
+    
+}
+.adverText li{
+ font-size: 16px;
+    color: #906d10;
+    padding-top: 20px;
+    
+}
+.service-list button a{
+ font-size: 15px;
+    color: #fff;    
+}
+.service-detail{
+width: 148px;
+    height: 125px;
+    background: #4a6aa7;
+}
+.service-detail p{
+ color: #fff;
+    font-size: 14px;
+    padding: 10px 15px;
+}
+.service-button{
+    width: 148px;
+    height: 277px;
+    background: #5b70b5;
+    display:inline-block;
+}
+.service-button img{
+ width: 130px;
+    height: 130px;
+    margin: 10px 10px;
+}
+.service-button button{
+ width: 130px;
+    height: 30px;
+   
+    margin: 6px 8px;
+    border-radius: 4px;
+     box-shadow: 0 2px #3d4686;
+    border: none;
+    background: linear-gradient(#a8acdd, #4949b4); 
+    
+}
+.service-button button a{
+ font-size: 15px;
+    color: #fff;
+}
+.contain{
+    width: 1349px;
+    height: 1678px;
+    margin: 0 auto;
+    
+}
+.bgimg{
+ width: 1349px;
+    height: 1678px;
+    margin: 0 auto;
+    background: url(../img/main_bg.png) no-repeat center;
+    position: relative;
+    overflow: hidden;
+}
+.bookbox{
+ width: 440px;
+    height: 290px;
+    
+    position: absolute;
+    top:150px;
+    right: 200px;
+}
+.booktype .active{
+ background: #fff;
+   
+}
+.booktype span{
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+ background: #d8d8d8;
+    border-radius: 3px 3px 0 0;  
+    
+}
+
+.booktype span a{
+  font-size: 16px;
+    line-height: 40px;
+    padding-left: 18px;
+}
+
+.book-con{
+ width: 440px;
+    height: 300px;
+    background: #fff;
+    overflow: hidden;
+}
+.book-hotel{
+    width: 440px;
+    height: 240px;
+    background: #fff;
+    overflow: hidden;
+}
+.livehotel{
+ display: block;
+    width: 300px;
+    height: 200px;
+    background: #fff;
+    z-index: 99;
+}
+.book-hotel p{
+ width: 395px;
+    height: 30px;
+    
+    margin: 10px auto;
+    
+}
+.book-hotel .bot-line{
+    width: 395px;
+    height: 2px;
+    background: #9b9898;
+    display: block;
+    margin-top: 5px;
+}
+.book-hotel button{
+ width: 119px;
+    height: 35px;
+    background: #f5e30c;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 20px;
+    right:40px;
+    border: none;
+}
+.triangle-up{
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid  #750690;
+    margin: auto;
+}
+.book-hotel button a{
+ font-size: 20px;
+    color: #fff;
+}
+.book-con p{
+ width: 395px;
+    height: 30px;
+    
+    margin: 10px auto;
+    
+}
+.book-con .bot-line{
+    width: 395px;
+    height: 2px;
+    background: #9b9898;
+    display: block;
+    margin-top: 5px;
+}
+.bot-inline{
+    display: block;
+ width: 50px;
+    height: 2px;
+    background: #750690;
+    
+}
+.book-con label{
+ margin-left: 5px;
+}
+.book-con button{
+ width: 119px;
+    height: 35px;
+    background: #f5e30c;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 20px;
+    right:40px;
+    border: none;
+}
+.book-con button a{
+ font-size: 20px;
+    color: #fff;
+}
+.long-input{
+ width: 322px;
+    height: 28px;
+   
+}
+.short-input{
+ width: 122px;
+    height: 28px;
+}
+
+.mod-title {
+    height: 50px;
+    font: normal 18px 'Microsoft Yahei';
+    line-height: 50px;
+    color: #454343;
+}
+.mod-background{
+  width: 298px;
+    height: 180px;
+    border:1px solid #b5b3b3;
+}
+.ml30{
+ margin-left: 30px;
+}
+.mod-background ul li{
+    height: 25px;
+    padding: 10px 10px;
+    border-bottom: 1px  dashed #aaa4a4;
+ 
+}
+.mod-background ul li:last-child{
+border-bottom:none;
+}
+.mod-background ul li a{
+    font-size: 15px;
+     
+}
+.mod-background ul li span{
+float: right;
+    color: #b4b2b2;
+}
+.panel-d{
+    display: block;
+width: 960px;
+    height: 230px;
+    
+    clear: both;
+}
+.mod-background-long{
+    display: block;
+   width: 960px;
+    height: 180px;
+    border:1px solid #b5b3b3;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    position:relative;
+    
+}
+.vip{
+    position: absolute;
+    left: 20px;
+    display: inline-block;
+    width:74px;
+    height:20px;
+    background:#fa9204;
+    border-radius: 0 0 5px 5px;
+    color:#fff;
+    text-align: center;
+}
+.data-bd{
+    display: inline-block;
+ width: 900px;
+    height: 140px;
+    
+    margin: 20px 30px;
+}
+.data-line{
+    
+ width: 550px;
+    height:140px;
+    
+   
+}
+.getmoney{
+width: 345px;
+    height: 140px;
+    
+    
+}
+.br-dashedline{
+    border-right: 1px dotted #a8a2a2; 
+    
+}
+.getmoney button{
+ width: 243px;
+    height: 38px;
+    background: #c71919;
+    border-radius: 6px;
+    border: none;
+    box-shadow:0 2px #671212;
+    margin-left: 60px;
+}
+.getmoney button a{
+ color: #fff;
+    font-size: 16px;
+}
+.data01{
+    width: 550px;
+    height: 40px;
+
+}
+.data01 span{
+   
+ margin-right: 15px;
+    font-size: 13px;
+    color: #696767;
+}
+.icon-cal{
+background: url(../img/icon-cal.png);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top:10px;
+    right:400px;
+    
+}
+
+.linebox{
+   width: 550px;
+    height: 20px;
+    margin-top: 10px;
+}
+.line{
+ width: 480px;
+    height: 6px;
+    background: #ada7a7;
+    border-radius: 2px; 
+    
+}
+.line-in{
+  width: 182px;
+    height: 6px;
+    background: #212bf0;
+    border-radius: 2px; 
+}
+.line-in-2{
+  width: 9.6px;
+    height: 6px;
+    background: #212bf0;
+    border-radius: 2px; 
+}
+.line-in-0{
+ width: 0;
+    height: 6px;
+    background: #212bf0;
+    border-radius: 2px;
+}
+.linebox .frt{
+    position: absolute;
+    top:65px;
+    left: 520px;
+    font-size:14px;
+    color: #696767;
+    
+}
+.data02{
+    width: 550px;
+    height: 40px; 
+}
+.border-line{
+ border-right: 1px dotted #b1adad; 
+    padding-left: 2
+}
+.biger{
+ font-size: 25px;
+    color:#ff0808;
+}
+
+    
+
+.data02 span{
+   
+    float: left;
+    width: 30%;
+    height: 40px;
+    
+    
+}
+.md{
+ font-size: 20px;
+    color: #4d4949;
+}
+.data02 p{
+ text-align: center;
+}
+.br-line-dotten{
+ border-right: 1px dotted #b4aaaa;
+    display: inline-block;
+}
+.tgy{
+ padding-top: 5px;
+}
+.gary{
+ color: #403f3f;
+}
+.foot{
+ width: 100%;
+    height: 350px;
+    border-top: 1px solid #a8a8a8;
+}
+.partner{
+ width: 960px;
+ height: 110px;
+    margin: 10px auto;
+    
+}
+.partner-box{
+ height: 85px;
+    
+}
+.partner-box ul{
+  
+    height: 85px;
+}
+.partner-box li {
+    margin: 15px 15px;
+    height: 30px;
+    float: left;
+   
+    
+}
+/*.partner-box li a{
+	background: url(../img/partner.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+     
+}*/
+.partner-box li .ms{
+    width:140px ;
+    height: 30px;
+    background: url(../img/partner.png);
+    background-repeat: no-repeat;
+	display: inline-block;
+    background-position:0 0  ;
+    
+    
+    
+}
+.partner-box li .ms:hover{
+ background-position:0 -45px ;
+}
+.partner-box li .xinda{
+     width:123px ;
+    height: 32px;
+    background: url(../img/partner.png);
+    background-repeat: no-repeat;
+	display: inline-block;
+    background-position:-168px 0  ;  
+}
+.partner-box li .xinda:hover{
+ background-position:-168px -45px ;
+}
+.partner-box li .wd{
+    background: url(../img/partner.png);
+    background-repeat: no-repeat;
+	display: inline-block;
+    background-position:-292px 0  ;
+    width:132px ;
+    height: 35px;
+    
+}
+.partner-box li .wd:hover{
+    
+    background-position:-292px -48px  ;
+    
+}
+.partner-box li .byht{
+background: url(../img/partner.png);
+    background-repeat: no-repeat;
+	display: inline-block;
+    background-position:-420px -4px  ;
+    width:130px ;
+    height: 35px;
+}
+.partner-box li .byht:hover{
+
+    background-position:-420px -48px  ;
+    
+}
+.partner-box li .wdty{
+background: url(../img/partner.png);
+    background-repeat: no-repeat;
+	display: inline-block;
+    background-position:-550px 0
+        ;
+    width:120px ;
+    height: 38px;
+}
+.partner-box li .wdty:hover{
+ background-position:-550px -45px;
+   
+}
+.partner-box li .tb{
+ background: url(../img/partner.png);
+    background-repeat: no-repeat;
+	display: inline-block;
+    background-position:-670px 0px
+        ;
+    width:120px ;
+    height: 43px;
+}
+.partner-box li .tb:hover{
+ 
+    background-position:-670px -48px
+        ;
+   
+}
+.about-us{
+ width: 960px;
+    height: 150px;
+    margin: 0 auto;
+    border-top: 1px solid #9b9898;
+}
+.aboutus{
+ width: 35px;
+    height: 33px;
+    background: url(../img/ms-ico.png);
+    background-position:-283px -336px;
+    display: inline-block;
+    float: left;
+}
+.about-all{
+    width: 960px;
+    height: 200px;
+    margin: 10px auto;
+ 
+}
+.about-all span{
+  
+    width: 152px;
+    float: left;
+}
+
+.about-us a{
+color:#5c5959;
+font-size: 14px;
+}
+
+.about-us ul{
+    margin-left: 10px;
+float: left;
+}
+.about-us li{
+    width: 75px;
+    height: 24px;
+    padding-top: 10px;
+
+}
+.help-center{
+ width: 35px;
+    height: 33px;
+    background: url(../img/ms-ico.png);
+    background-position:-283px -370px;
+    display: inline-block;
+    float: left;
+}
+.code-app{
+    width: 120px;
+    height:120px;
+ background: url(../img/weixin.jpg) no-repeat;
+    display: block;
+    float: left;
+    margin: 5px 15px;
+}
+.mszz-app{
+    width: 120px;
+    height:120px;
+ background: url(../img/qian.jpg) no-repeat;
+    display: block;
+    float: left;
+    margin: 5px 15px;
+}
+.fdlink{
+ float: right;
+}
+.mszz-logo{
+ width: 179px;
+    height: 28px;
+   background: url(../img/bottom-logo.png) no-repeat;
+    display: inline-block;
+}
+.linkway p{
+    display:block;
+   font-size: 13px;
+    color: #9b9898;
+    padding: 5px 50px;
+    
+    
+  
+}
+.linkway .phone-num{
+     font-size: 30px;
+     color: #0c5cf2;
+    font-weight: 800;
+   
+     
+}
+.linkway .ai{
+    
+}
+
+.planbg{
+    display: inline-block;
+ width: 500px;
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.planbg b{
+   display: block;
+    width: 200px;
+    height: 8px;
+    background: #08c;
+    border-radius: 4px;
+}
+
+.linkway p{
+    display:block;
+   font-size: 13px;
+    color: #9b9898;
+    padding: 5px 50px;
+    
+    
+  
+}
+.linkway .phone-num{
+     font-size: 30px;
+     color: #0c5cf2;
+    font-weight: 800;
+   
+     
+}
+.linkway .ai{
+    
+}
+
+.planbg{
+    display: inline-block;
+ width: 500px;
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.planbg b{
+   display: block;
+    width: 200px;
+    height: 8px;
+    background: #08c;
+    border-radius: 4px;
+}
+.bottom{
+ width: 100%;
+    height: 30px;
+    background: #262525;
+}
+.bottom p{
+ color: #fff;
+    text-align: center;
+    line-height: 30px;
+}
+.bottom p i{
+
+ color: #527bea;}
+
+.calbd{
+ position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index:15;
+    background: #2c2b2b;
+    filter: alpha(opacity=60);
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    transition: all 0.5s;
+    
+}
+
+.calbox{
+ width: 440px;
+    height: 430px; 
+    z-index: 16;
+    position: fixed;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    left: 450px;
+   
+    
+}
+.cal-title{
+    width: 440px;
+ height: 40px;
+    background: #2560e5;
+}
+.cal-title p{
+ font-size: 18px;
+    color: #fff;
+    padding: 8px 8px;
+    display: inline-block;
+}
+.cal-title .off{
+    display: inline-block;
+    color: #fff;
+    font-size: 40px;
+    
+    float: right;
+    position: absolute;
+    top:-7px;
+    right: 0; 
+    text-decoration: none;
+}
+.cal-body{
+ width: 440px;
+    height: 420px;
+    background: #d9d6d6;
+    overflow: hidden;
+    
+   
+}
+.cal-body .cal-contain{
+ width: 390px;
+    height: 340px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 20px 30px;
+    border: 1px solid #c1bcbc;
+    font-size: 16px;
+    
+}
+.cal-contain p{
+ width:378px ;
+	height: 45px;
+	margin: 0 auto;
+}
+.cal-contain p span{
+ display: inline-block;
+	width: 125px;
+	height: 45px;
+	text-align: right;
+	line-height: 45px;
+}
+.cal-contain p input{
+    padding: 7px;
+    border-radius: 4px;
+    border: none;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+#count{
+ width: 150px;height: 40px;
+	border-radius: 8px;
+	background: #0191d8;
+	line-height: 40px;
+	text-align: center;
+	margin-left:110px;
+    font-size: 16px;
+}
+.citylist{
+ width: 420px;
+    height: 170px;
+    border: 1px solid #bab7b7;
+    position: absolute;
+    top:160px;
+    right: -56px;
+    background: #fff;
+    z-index: 9;
+}
+.hot-city ul{
+ border-top: 1px solid #facb07;
+}
+.CityList li{
+ display: inline-block;
+    width:70px;
+    height: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+.hot-city{
+ width: 320px;
+    height: 120px;
+    margin: 0 auto;
+}
+.hot-city span{
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    border:1px solid #f7c212;
+    border-bottom: none;
+    text-align: center;
+    margin-left: 10px;
+    
+}
+
+/*.pbox p{
+ float: right;
+    font-size: 16px;
+    margin: 5px 20px;
+}
+.pbox2{
+ display: block;
+    clear: both;
+    font-size: 16px;
+    margin-top: 5px;
+    
+}
+.pbox2 .ab{
+ display: block;
+    margin: 10px 68px;
+}
+.pbox2 .cd{
+ display: block;
+    margin: 8px 35px;
+}
+.pt20{
+
+padding-top: 20px;
+}*/
+/*.cal-contain p{
+    display: inline-block;
+ width: 380px;
+    height: 30px;
+    font-size: 16px;
+    margin: 10px 30px;
+}*/
+/*.cal-contain p input{
+    width: 210px;
+    height: 30px;
+    border-radius: 3px;
+    border:1px solid #9a9999;
+    padding-left: 5px;
+font-size: 16px;
+}
+.cal-btn{
+ width: 150px;
+    height: 38px;
+    display: inline-block;
+    border-radius: 3px;
+    background: #08c;
+    margin-left: 150px;
+}
+.cal-btn a{
+ font-size: 16px;
+    color: #fff;
+    line-height: 38px;
+    padding-left: 45px;
+}*/
+.calendar { POSITION: absolute;
+    top:510px;
+    right: 373px;
+    WIDTH:190px; HEIGHT: 180px; PADDING:0; FLOAT: left;border:1px solid #819dba;background:#fff;
+display: none;
+}
+.calendar .calMain { WIDTH:100%; HEIGHT:180px; FLOAT: left; OVERFLOW: hidden; POSITION: absolute; }
+.calendar .calMain .calTitle { WIDTH: 100%; FLOAT: left; HEIGHT: 23px; BACKGROUND: #fff; OVERFLOW: hidden; }
+.calendar .calMain .calTitle .t_date { WIDTH: 149px; FLOAT: left; HEIGHT: 23px; COLOR: #51729D; FONT-WEIGHT: bold; LINE-HEIGHT: 23px; TEXT-ALIGN: center; }
+.calendar .calMain .calTitle .prevMonth { WIDTH: 15px; HEIGHT: 15px; FLOAT: left; MARGIN: 8px 0 0 5px; CURSOR: pointer; BACKGROUND: url(../img/date_bg.png) no-repeat 5px -87px; }
+.calendar .calMain .calTitle .nextMonth { WIDTH: 15px; HEIGHT: 15px; FLOAT: right; MARGIN: 8px 5px 0 0; CURSOR: pointer; BACKGROUND: url(../img/date_bg.png) no-repeat 6px -157px; }
+.calendar .calMain .calTitle .currentYear { }
+.calendar .calMain .calTitle .currentMonth { }
+.calendar .calMain .calTitle .currentYearText { FLOAT: left; MARGIN: 0 0px 0 39px; CURSOR: pointer; }
+.calendar .calMain .calTitle .currentMonthText { FLOAT: left; CURSOR: pointer; WIDTH: 30px; TEXT-ALIGN: right; }
+.calendar .calMain .calContent { WIDTH: 378px; HEIGHT: 157px; FLOAT: left; }
+.calendar .calMain .calContent .enabled { POSITION: absolute; WIDTH: 100%; HEIGHT: 157px; FLOAT: left; }
+.calendar .calMain .calContent .reserve { POSITION: absolute; WIDTH:100%; HEIGHT: 157px; FLOAT: left; }
+.calendar .calMain .calContent .tabD { WIDTH: 100%; FLOAT: left; BORDER-COLLAPSE: collapse; BORDER-SPACING: 0; BORDER: 0; }
+.calendar .calMain .calContent .tabD th { BACKGROUND: url(../img/date_bg.png) repeat-x; LINE-HEIGHT: 22px; FONT-WEIGHT: normal; PADDING-BOTTOM: 4px; COLOR: #fff; }
+.calendar .calMain .calContent .tabD td { COLOR: #1F3959; TEXT-ALIGN: center; LINE-HEIGHT: 19px; WIDTH: 27px; FONT-FAMILY: "Georgia"; }
+.calendar .calMain .calContent .tabD td span { COLOR: #C0C0C0; }
+.calendar .calMain .calContent .tabD td a { WIDTH: 23px; LINE-HEIGHT: 18px; FLOAT: left; MARGIN: 1px 0 0 2px; CURSOR: pointer; COLOR: #51729D; }
+.calendar .calMain .calContent .tabD td .nextD { COLOR: #BCCADC; }
+.calendar .calMain .calContent .tabD td .prevD { COLOR: #BCCADC; }
+.calendar .calMain .calContent .tabD td .hover { WIDTH: 21px; LINE-HEIGHT: 16px; BORDER: 1px solid #7D99BD; FLOAT: left; MARGIN: 1px 0 0 2px; }
+.calendar .calMain .calContent .tabD td .current { WIDTH: 21px; LINE-HEIGHT: 16px; BORDER: 1px solid #51729D; FLOAT: left; MARGIN: 1px 0 0 2px; }
+.calendar .calMain .calContent .tabD td .select { WIDTH: 21px; LINE-HEIGHT: 16px; BACKGROUND: #51729D; BORDER: 1px solid #51729D; COLOR: #fff; FLOAT: left; MARGIN: 1px 0 0 2px; }
+.calendar .calMain .calContent .tabM { WIDTH: 100%; FLOAT: left; BORDER-COLLAPSE: collapse; BORDER-SPACING: 0; BORDER: 0; }
+.calendar .calMain .calContent .tabM td { COLOR: #1F3959; TEXT-ALIGN: center; HEIGHT: 50px; WIDTH: 47px; FONT-FAMILY: "Georgia"; }
+.calendar .calMain .calContent .tabM td a { WIDTH: 42px; LINE-HEIGHT: 42px; FLOAT: left; MARGIN: 0px 0 0 2px; CURSOR: pointer; COLOR: #51729D; }
+.calendar .calMain .calContent .tabM td .hover { WIDTH: 40px; LINE-HEIGHT: 40px; BORDER: 1px solid #7D99BD; FLOAT: left; MARGIN: 0px 0 0 2px; }
+.calendar .calMain .calContent .tabM td .current { WIDTH: 40px; LINE-HEIGHT: 40px; BORDER: 1px solid #51729D; FLOAT: left; MARGIN: 0px 0 0 2px; }
+.calendar .calMain .calContent .tabM td .select { WIDTH: 40px; LINE-HEIGHT: 40px; BACKGROUND: #51729D; BORDER: 1px solid #51729D; COLOR: #fff; FLOAT: left; MARGIN: 0px 0 0 2px; }
+.calendar .calMain .calContent .tabY { WIDTH: 100%; FLOAT: left; BORDER-COLLAPSE: collapse; BORDER-SPACING: 0; BORDER: 0; }
+.calendar .calMain .calContent .tabY td { COLOR: #1F3959; TEXT-ALIGN: center; HEIGHT: 50px; WIDTH: 47px; FONT-FAMILY: "Georgia"; }
+.calendar .calMain .calContent .tabY td a { WIDTH: 42px; LINE-HEIGHT: 42px; FLOAT: left; MARGIN: 0px 0 0 2px; CURSOR: pointer; COLOR: #51729D; }
+.calendar .calMain .calContent .tabY td .nextY { COLOR: #BCCADC; }
+.calendar .calMain .calContent .tabY td .prevY { COLOR: #BCCADC; }
+.calendar .calMain .calContent .tabY td .hover { WIDTH: 40px; LINE-HEIGHT: 40px; BORDER: 1px solid #7D99BD; FLOAT: left; MARGIN: 0px 0 0 2px; }
+.calendar .calMain .calContent .tabY td .current { WIDTH: 40px; LINE-HEIGHT: 40px; BORDER: 1px solid #51729D; FLOAT: left; MARGIN: 0px 0 0 2px; }
+.calendar .calMain .calContent .tabY td .select { WIDTH: 40px; LINE-HEIGHT: 40px; BACKGROUND: #51729D; BORDER: 1px solid #51729D; COLOR: #fff; FLOAT: left; MARGIN: 0px 0 0 2px; }
+.calendar .calMain a:hover { TEXT-DECORATION: none; }
+
+
+
+
+
+

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>民生转赚</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/flexslider.js"></script>
+    <script type="text/javascript" src="js/service.js"></script>
+    <script src='js/highcharts.js'></script>
+</head>
+<body>
+   <div class="wrap">
+      <div class="header">
+         <div class="topbox">
+             <div class="topbox-info">
+                 <ul>
+                     <li class="br-line pr20">财富热线<b>40069-95568转2</b></li>
+                     <li class="br-line pl20 pr20"><a href="#">新手指南</a></li>
+                     <li class="br-line pl20 pr20">欢迎来到民生转赚！ <a href="#">[登录]</a> <a href="#">[注册]</a></li>
+                     <li class="pl194">
+                        <i class="app-icon"></i>
+                        <a href="#">下载APP</a>
+                        <div class="phone-pic"></div>
+                    </li>
+                      
+                    <li class="br-line pr20 pl56">
+                       <i class="wechat-icon"></i>
+                       <a href="#">关注微信</a>
+                       <div class="wechat-pic"></div>
+                    </li>
+                    <li class="br-line pl20 pr20 "><a href="#">帮助中心</a></li>
+                 </ul>
+             </div>
+         </div>
+         <div class="header-contain">
+             <div class="logo flt">
+                 <img src="img/logo.png">
+             </div>
+             <div class="tabnav flr">
+                <ul>
+                    <li><a href="http://www.minshengec.com/" target="_blank">购物</a></li>
+                    <li><a href="http://www.msyidai.com/index" target="_blank">投资</a></li>
+                    <li class="cur"><a href="#">资产</a></li>
+                </ul>
+             </div>
+             
+         </div>
+          
+      </div>
+      <div class="nav">
+          <div class="navbox">
+             <ul>
+                 <li><a href="#">首页</a></li>
+                 <li><a href="#">我要订制</a></li>
+                 <li><a href="#">我要赚钱</a></li>
+                 <li><a href="#">转让专区</a></li>
+                 <li><a href="#">我的账户</a></li>
+                 <li><a href="bussin.html">商旅优惠</a></li>
+             </ul> 
+          </div>
+      </div>
+      <div class="focus">
+          <div class="login">
+              <div class="loginbg"></div>
+              <div class="loginbox">
+                  <div class="input-row">
+                      <i class="username"></i>
+                      <input  type="text" placeholder="请输入用户名/手机号">
+                  </div>
+                  <div class="input-row">
+                      <i class="passerword"></i>
+                      <input  class="inputbox" type= "password" placeholder="请输入密码">
+                  </div>
+                  <div class="input-row  linkrow">
+                      <i class="chaticon"></i>
+                      <input  type= "text" placeholder="请输入验证码">
+                      <img src="img/createVerfyCode.jpg">
+                  </div>
+                  <button><a href="#">登录</a></button>
+                  <div class="tip">
+                  <a  class="flt"href="#">忘记密码？</a>
+                  <a  class="frt" href="#">免费注册</a>
+                  </div>
+              </div>
+              
+          </div>
+      <div class="slider">
+          <ul>
+              <li class="current"><img src="img/2.jpg"alt="slider" ></li>
+              <li><img src="img/4.jpg" alt="slider"></li>
+              <li><img src="img/5.jpg" alt="slider"></li>
+              
+          </ul>
+          <div class="dot-wraper">
+              <a href="javascript:void(0);" class="current ac_slider"></a>
+              <a href="javascript:void(0);" class="ac_slider"></a>
+              <a href="javascript:void(0);" class="ac_slider"></a>    
+          </div>
+          <div class="ac_option">
+              <a href="javascript:void(0);" class="ac_prev"></a>
+              <a href="javascript:void(0);" class="ac_next"></a>
+          </div>          
+      </div>
+          
+          
+      </div>
+      <div class="service">
+          <div class="service-top">
+              <div class="on-line-service flt"></div>
+              <div class="service-list frt">
+                  <button><a href="http://wpa.qq.com/msgrd?v=3&uin=2982879484&site=qq&menu=yes" target="_blank">QQ客服MM01</a></button>
+                  <button><a href="http://wpa.qq.com/msgrd?v=3&uin=2982879484&site=qq&menu=yes" target="_blank">QQ客服MM02</a></button>
+                  <button><a href="http://wpa.qq.com/msgrd?v=3&uin=2982879484&site=qq&menu=yes" target="_blank">加入官方QQ群</a></button>
+              </div>
+          </div>
+          <div class="service-detail frt">
+              <p>工作时间：<br> 9：00-18:00</p><!--<br>是换行符号-->
+              
+              <p>客服热线：<br>40069-95568转2</p>
+          </div>
+          <div class="service-button frt">
+              <img src="img/qian.jpg">
+              <p style="color:#fff;margin-left:40px;">扫码下载APP</p>
+              <button><a href="#">常见问题</a></button>
+              <button><a href="#">新手指南</a></button>
+          </div>
+      </div>
+       <div class="contain">
+           <div class="panel-a flt">
+              <div class="mod-title">
+                <h3>转赚数据</h3>
+              </div>
+              <div class="mod-background" id="zzdate">
+                  
+              </div>
+            </div>
+           <div class="panel-b  ml30 ">
+              <div class="mod-title">
+                  <h3 class="flt">转赚世界</h3><span class="frt" style="font-size:12px;color:#f70e0e;">查看更多&gt;&gt;</span>
+              </div>
+              <div class="mod-background">
+                  <ul>
+                      <li><a href="#">关于2月7日系统维护公告</a><span>2017/02/06</span></li>
+                      <li><a href="#">关于工商银行暂停代收服务</a><span>2017/02/06</span></li>
+                      <li><a href="#">2017年春节期间平台业</a><span>2017/02/06</span></li>
+                      <li><a href="#">关于1月20日系统维护公</a><span>2017/02/06</span></li>
+                  </ul>
+              </div>
+            </div>
+            <div class="panel-c ml10" >
+              <div class="mod-title">
+                <h3 class="flt">转赚预告</h3>
+                <span class="frt" style="font-size:12px;color:#f70e0e;">查看更多&gt;&gt;</span>
+              </div>
+              <div class="mod-background">
+                  <ul>
+                      <li><a href="#">加息券产品</a><span>2017/02/06</span></li>
+                      <li><a href="#">代金券产品</a><span>2017/02/06</span></li>
+                      <li><a href="#">周周盈产品</a><span>2017/02/06</span></li>
+                      <li><a href="#">七天新手产品</a><span>2017/02/06</span></li>
+                  </ul>
+              </div>
+            </div>
+           <div class="panel-d">
+               <div class="mod-title">
+                   <h3 class="flt">正在热销产品</h3>
+                    <span class="flt ml30" style="font-size:12px;color:#f70e0e;">查看更多&gt;&gt;</span>
+                    </div>
+                    <div class="mod-background-long ">
+                        <span class="vip">新友专享</span>
+                        <div class="data-bd">
+                            <div class="data-line flt br-dashedline">
+                                <div class="data01">
+                                    <span><a style='font-size:20px;color:#2f51c1;' href="#">新友专享-5242</a></span>
+                                    <span>100元起投</span>
+                                    <span>限投20000元</span>
+                                    <i class="icon-cal frt"></i>
+                                    
+                                </div>
+                                <div class="linebox">
+                                    <div class="line">
+                                        <div class="line-in"></div>
+                                    </div>
+                                    <span class="frt" >38%</span>
+                                </div>
+                                <div class="data02">
+                                    <span class="br-line-dotten">
+                                        <p class="biger">12.00%</p>
+                                        <p class="gary">预期年化收益率</p>
+                                    </span>
+                                    <span class="br-line-dotten">
+                                        <p class="md">7天</p>
+                                        <p class="tgy gary">项目期限</p>
+                                    </span>
+                                    <span >
+                                        <p class="md">12万</p>
+                                        <p class="tgy gary">可购金额</p>
+                                    </span>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="getmoney frt">
+                                <button><a href="javascript:void(0)">我要赚钱</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mod-background-long ">
+                        <span class="vip">可用投资券</span>
+                        <div class="data-bd">
+                            <div class="data-line flt br-dashedline">
+                                <div class="data01">
+                                    <span><a style='font-size:20px;color:#2f51c1;' href="#">季沣盈-5281</a></span>
+                                    <span>1000元起投</span>
+                                    
+                                    <i class="icon-cal frt"></i>
+                                </div>
+                                <div class="linebox">
+                                    <div class="line">
+                                        <div class="line-in-2"></div>
+                                    </div>
+                                    <span class="frt" >2%</span>
+                                </div>
+                                <div class="data02">
+                                    <span class="br-line-dotten">
+                                        <p class="biger">4.65%</p>
+                                        <p class="gary">预期年化收益率</p>
+                                    </span>
+                                    <span class="br-line-dotten">
+                                        <p class="md">82天</p>
+                                        <p class="tgy gary">项目期限</p>
+                                    </span>
+                                    <span >
+                                        <p class="md">97.09万</p>
+                                        <p class="tgy gary">可购金额</p>
+                                    </span>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="getmoney frt">
+                                <button><a href="javascript:void(0)">我要赚钱</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mod-background-long ">
+                        
+                        <div class="data-bd">
+                            <div class="data-line flt br-dashedline">
+                                <div class="data01">
+                                    <span><a style='font-size:20px;color:#2f51c1;' href="#">双福溢-5283</a></span>
+                                    <span>1000元起投</span>
+                                    
+                                    <i class="icon-cal frt"></i>
+                                </div>
+                                <div class="linebox">
+                                    <div class="line">
+                                        <div class="line-in-0"></div>
+                                    </div>
+                                    <span class="frt" >0%</span>
+                                </div>
+                                <div class="data02">
+                                    <span class="br-line-dotten">
+                                        <p class="biger">4.55%</p>
+                                        <p class="gary">预期年化收益率</p>
+                                    </span>
+                                    <span class="br-line-dotten">
+                                        <p class="md">52天</p>
+                                        <p class="tgy gary">项目期限</p>
+                                    </span>
+                                    <span >
+                                        <p class="md">50万</p>
+                                        <p class="tgy gary">可购金额</p>
+                                    </span>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="getmoney frt">
+                                <button><a href="javascript:void(0)">我要赚钱</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+               
+               
+           </div>
+            
+       </div>
+       <div class="foot">
+           <div class="partner">
+               <span style="font-size:18px;color:#6c6969;padding:0 10px;">合作伙伴</span>
+               <div class="partner-box">
+               <ul>
+                   <li>
+                       <a class="ms" target="—blank" href="http://www.cmbc.com.cn/">
+                                    </a>
+                   </li>
+                   
+                   <li>
+                       <a class="xinda" target="—blank" href="http://www.cindamc.com/">
+                                    </a>
+                   </li>
+                   <li>
+                       <a class="wd" target="—blank" href="http://www.wdzj.com/">
+                                    </a>
+                   </li>
+                   <li>
+                       <a class="byht" target="—blank" href="https://www.umbpay.com/">
+                                    </a>
+                   </li>
+                   <li>
+                       <a class="wdty" target="—blank" href="http://www.p2peye.com/">
+                                    </a>
+                   </li>
+                   <li>
+                       <a class="tb" target="—blank" href="http://www.tempusworld.com/">
+                                    </a>
+                   </li>
+               </ul>
+               </div>
+           </div>
+           
+           <div class="about-us">
+              <div class="about-all">
+               <span >
+                  <i class="aboutus"></i>
+                   
+                   <ul class="br-line pr20 ">
+                       <li><a href="#" style="font-size:18px;">关于我们</a></li>
+                       <li><a href="#">平台介绍</a></li>
+                       <li><a href="#">公司简介</a></li>
+                       <li><a href="#">联系我们</a></li>
+                   </ul>
+               </span>
+               <span >
+                  <i class="help-center  "></i>
+                   <ul class="br-line pr20 ">
+                       <li><a href="#" style="font-size:18px;">帮助中心</a></li>
+                       <li><a href="#">新手指南</a></li>
+                       <li><a href="#">常见问题</a></li>
+                       <li><a href="#">安全保障</a></li><li><a href="#">收费标准</a></li>
+                   </ul>
+               </span>
+               
+                
+               <span >
+                    <ul style='font-size:14px;color:#484848;'>&ensp;&ensp;&ensp;&ensp;&ensp;扫码关注
+                        <p>关注民生转赚服务号</p>
+                        </ul>
+                   <i class="code-app"></i>
+               </span>
+               <span >
+                    <ul style='font-size:14px;color:#484848;'>&ensp;&ensp;&ensp;&ensp;&ensp;扫码下载
+                        <p>下载民生转赚APP</p>
+                        </ul>
+                   <i class="mszz-app"></i>
+               </span>
+                 
+                  <i class="mszz-logo"></i>
+                  <select class="fdlink" onchange="window.location=this.value">这句话可以让网址实现跳转
+                      <option value="http://www.cmbc.com.cn/">民生电商旗下网站</option>
+                      <option value="http://creditcard.cmbc.com.cn/">电商购物商城</option>
+                  </select>
+                  <div class="linkway frt">
+                     
+                         
+                         
+                         <p class="ai" >全国服务热线（工作时间9:00-18:00）</p>
+                         <p class="phone-num">40069-95568转2</p>
+                         <p>QQ客服群：190981016</p>
+                         <p>客服邮箱：service@mszhuanzhuan.com</p>
+                         
+                         </div>
+                  
+              
+               </div>
+       </div>
+       
+           
+       </div>
+       <div class="bottom">
+           <p>Copyright 2015 mszhuanzhuan.com All Rights Reserved <i>粤ICP备13067411号-8</i></p>
+       </div>
+       <div class="calbd hide"> </div>
+       <div class="calbox hide">
+           <div class="cal-title">
+               <p>收益计算器</p>
+               <a href='javascript:' class="off frt">×</a>
+           </div>
+           <div class="cal-body">
+               <div class="cal-contain">
+                   <p>
+                       <span>还款方式</span>
+                       <input type="text" value="一次性还本息" disabled="disabled">   
+                   </p>
+                   <p>
+                       <span>投资金额(元):</span>
+                       <input id="invest" type="text" value=""/>   
+                   </p>
+                   <p>
+                       <span>年化收益率:</span>
+                        <input id="year" type="text" value="12.00">   
+                   </p>
+                   <p>
+                       <span>借贷期限:</span>
+                       <input id="deadline" type="text" value="7" disabled="disabled">
+                       <i>天</i>
+                   </p>
+                   <p>
+                       <span>预期收益:</span>
+                       <em id="earnings"></em>
+                       元
+                   </p>
+                   <p>
+                       <span>预期本息合计:</span>
+                       <em id="total"></em>
+                       元
+                   </p>
+                   <div class="bom-bt mag">
+                       <button id="count"><a href="javascript:">计算收益</a></button>
+                   </div>
+               </div>
+
+           </div>
+       </div>
+          
+           
+      
+       
+   </div>
+   
+   <!--计算器计算方式-->
+    <script>
+    $('#count').on('click',function(){
+      var touzijine = Number($('#invest').val());//把val变成数值        
+      var shouyilv = ($('#year').val())/100; 
+      var rateDate =  Number($('#deadline').val());
+      var res = (rateDate/365*shouyilv*touzijine).toFixed(2);//保留小数点后两位数
+      var win = res;
+        var winTotal=Number(win)+Number(touzijine);
+        var earning =$('#earnings')
+        var total =$('#total');
+        earning.html(win);
+        total.html(winTotal);
+    });
+        
+    </script>
+    
+    <!--饼状图-->
+    <script>
+    $(function () {
+    $('#zzdate').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false
+        },
+        title: {
+            text: '赚友投资金额分布',
+            floating: true,
+            y:160,
+             style: {
+                color: '#7b7979',
+                fontSize: '10px'
+            }
+            
+            
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        legend: {
+           layout:'vertical',//水平分布
+            align:'left',
+            y:-30
+             
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: false
+                },
+                showInLegend: true
+            }
+        },
+        series: [{
+            
+            type: 'pie',
+            name: '转赚数据',
+            data: [
+                ['5-50万',   44.4],
+                
+                
+                ['50-100万',    13.9],
+                ['100万以上',     24.2],
+                ['5万以下',   17.5]
+            ],
+            
+            
+            
+        }]
+    });
+});
+
+
+    </script>
+    
+    
+   <!-- 导航图滚动到一定高度后，定位在页头。-->
+    <script>
+    $(window).scroll(function(){    
+		if($(window).scrollTop()>=5){//scrollTop:设置或获取位于对象最顶端和窗口中可见内容的最顶端之间的距离
+			$(".nav").css({
+				position:"fixed",//生成绝对定位的元素，相对于浏览器窗口进行定位。
+				top:0,
+				zIndex:99,
+			});
+		}else{
+			$(".nav").css({
+				position:"static"//static默认值。没有定位，元素出现在正常的流中
+			});
+		}
+	});
+    </script>
+  <!--客服窗口的隐藏和显示-->  
+    
+    <script>
+        $('.service').css('right','-150px')
+        $('.on-line-service').on('mouseover',function(){
+        $('.service').css('right','0')
+        });
+        $('body').on('click',function(){
+         $('.service').css('right','-150px');
+        })
+    
+    </script>
+    <!--计算器界面显示和关闭-->
+    <script>
+    $(function(){
+     $('body').on('click','.icon-cal',function(){
+       $('.calbd').removeClass('hide');
+         $('.calbox').removeClass('hide');
+     });
+        $('.off').click(function(){
+        $('.calbd').addClass('hide');
+         $('.calbox').addClass('hide');
+        });
+        
+    });
+    </script>
+    
+    <script>
+        $('.icon-cal').on('click',function(){
+         $('.calbd').removeClass('hide'); $('.calbox').removeClass('hide');
+            
+        });
+        $('.off').on('click',function(){
+         $('.calbd').addClass('hide'); $('.calbox').addClass('hide');
+        });
+        
+    
+    </script>
+   
+</body>
+</html>

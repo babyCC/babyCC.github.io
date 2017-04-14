@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/miui.css">
+	<title>小米官网首页</title>
+</head>
+<body>
+<div class="wrap">
+	<!-- header -->
+	<div class="header-bg">
+		<div class="header content">
+			<div class="logo flt"><a href="/">lvci</a></div>
+			<ul class="nav frt">
+				<li class="active"><a href="/">首页</a></li>
+				<li><a href="/">首页</a></li>
+				<li><a href="/">首页</a></li>
+				<li><a href="/">首页</a></li>
+				<li><a href="/">首页</a></li>
+				<li><a href="/">首页</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- focus -->
+	<div class="focus">
+		<div class="flexslider">
+			<ul class="slides clearfix">
+				<li style="background:url(img/activity_34.png) 50% 0 no-repeat; background-size:cover;"></li>
+				<li style="background:url(img/activity_35.png) 50% 0 no-repeat; background-size:cover;"></li>
+				<li style="background:url(img/activity_36.png) 50% 0 no-repeat; background-size:cover;"></li>
+				<li style="background:url(img/activity_37.jpg) 50% 0 no-repeat; background-size:cover;"></li>
+				<li style="background:url(img/activity_38.png) 50% 0 no-repeat; background-size:cover;"></li>
+			</ul>
+		</div>
+	</div>
+	<!-- module -->
+	<div class="module">
+		<div class="app-body content">
+			<ul class="app-box clearfix">
+				<li>
+					<a class="app-link" href="">
+						<img class="app-img" src="img/icons_miui.png" alt="">
+						<span class="app-desc">
+							<span class="desc-t3">汉藏双语应用程序开发者大赛</span>
+							<span class="click-text">点击参与报名</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a class="app-link" href="">
+						<img class="app-img" src="img/icons_m8.png" alt="">
+						<span class="app-desc">
+							<span class="desc-t3">汉藏双语应用程序开发者大赛</span>
+							<span class="click-text">点击参与报名</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a class="app-link" href="">
+						<img class="app-img" src="img/icons_miui_bbs.png" alt="">
+						<span class="app-desc">
+							<span class="desc-t3">汉藏双语应用程序开发者大赛</span>
+							<span class="click-text">点击参与报名</span>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- footer -->
+	<div class="footer">
+		<div class="content clearfix">
+			<ul class="footer-link">
+				<li><a href="/">新浪微博</a></li>
+				<li><a href="/">官方微信</a></li>
+				<li><a href="/">官方贴吧</a></li>
+				<li><a href="/">全球粉丝站</a></li>
+				<li><a href="/">简体中文</a></li>
+			</ul>
+			<p class="copyright">Copyright © 2016 MIUI 京ICP备10046444号 | 京公网安备11010802020134号 | 京ICP证110507号</p>
+		</div>
+	</div>
+	<!-- footer start -->
+</div>
+
+
+<!-- focus js -->
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min-1.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.flexslider').flexslider({
+		directionNav: true,
+		pauseOnAction: false
+	});
+});
+</script>
+<!-- focus js end -->
+
+
+
+<!-- click add start -->
+<script>
+var clickCount = 0, $i=$('<b>');
+    $i.css({
+    'z-index':99999,
+    'position':'absolute',
+    'color':'red',
+    'display':'none'
+    });
+    $('body').append($i);
+    $(document).on('click',function(e){
+    var x = e.pageX, y = e.pageY;
+    $i.text('+'+(++clickCount)).css({
+    'display':'block',
+    'top':y-15,
+    'left':x,
+    'opacity':1
+
+    }).stop(true,false).animate({
+    'top':y-180,
+    'opacity':0
+    },800,function(){
+    $i.hide();
+    });
+    e.stopPropagation();
+});
+</script>
+<!-- click add end -->
+
+
+
+</body>
+</html>

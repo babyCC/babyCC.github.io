@@ -1,0 +1,9 @@
+$(function(){
+  $('.service').css('right','-150px');
+    $('.on-line-service').on('mouseover',function(){
+        $('.service').css('right','0');
+     });
+    $('body').on('click',function(){
+        $('.service').css('right','-150px');
+    });
+});
