@@ -1,0 +1,145 @@
+#main-wrapper{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	
+}
+.mainbox{
+	width: 1200px;
+	height: 1000px;
+	margin: 0 auto;
+}
+.meunbox{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
+.meunbox .title{
+	font-size: 20px;
+	padding-bottom: 5px;
+	height: 30px;
+	border-bottom: 2px solid #403F3F;
+}
+/*.meunbox .meun ul{
+	height: 35px;
+	border-bottom: 2px solid #9B9898; 
+}*/
+.meunbox .meun ul li{
+	font-size: 16px;
+	text-align: center;
+	padding: 5px 20px;
+	float: left;
+	
+}
+.meunbox .meun ul li:hover{
+	background: #E7E7E7;
+	border-radius: 6px;
+	
+}
+.meunbox .meun ul li a:hover{
+	text-decoration: none;
+}
+.containbox{
+	width: 1200px;
+	height: auto;
+	margin: 50px auto;
+	clear: both;
+}
+.containbox .leftbox{
+	display: inline-block;
+	width: 860px;
+	height: auto;
+	float: left;
+	margin-right: 30px;
+	/*border: 1px solid #777777;*/
+}
+.containbox .leftbox ul li{
+	float: left;
+	border-bottom: 1px solid #B1ADAD;
+}
+.containbox .leftbox h2{
+	margin: 10px 0;
+}
+.containbox .leftbox p{
+	font-size: 15px;
+}
+.containbox .leftbox span{
+	display: inline-block;
+	margin: 10px 0;
+}
+.containbox .rightbox{
+	display: inline-block;
+	font-size: 14px;
+	width: 280px;
+	height: 500px;
+	
+	float: right;
+}
+.rightbox .studyVideo{
+	display: inline-block;
+	width: 263px;
+	height: 25px;
+	background: #E8E8E8;
+	font-weight: 600;
+	padding: 10px 8px;
+}
+.rightbox ul li{
+	position: relative;
+	float: left;
+	width: 280px;
+	height: 66px;
+	background:#E8E8E8;
+	margin: 10px 0;
+}
+.rightbox ul li .hidebox{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 280px;
+	height: 66px;
+	background: #080808;
+	/*-moz-opacity: 0.2;
+	-webkit-opacity: 0.2;
+	fill-opacity: 0.2;*/
+	opacity: 0;
+}
+.rightbox ul li .fa{
+	position: absolute;
+	top:20%;
+	left: 15%;
+	color: #FFFFFF;
+	opacity: 0;
+}
+.rightbox ul li:hover .hidebox{
+	-moz-opacity: 0.2;
+	-webkit-opacity: 0.2;
+	fill-opacity: 0.2;
+	opacity: 0.2;
+}
+.rightbox ul li:hover .fa{
+	-moz-opacity: 1;
+	-webkit-opacity: 1;
+	fill-opacity: 1;
+	opacity: 1;
+}
+
+.rightbox ul li .HTML{
+	display: inline-block;
+	float: left;
+	width: 120px;
+	height: 66px;
+	background: url(../img/video_pic_00041.jpg);
+}
+.rightbox ul li span{
+	float: left;
+	width: 160px;
+	height: 66px;
+}
+.rightbox .hot-point li{
+	list-style: inside;
+	color: #0C5CF2;
+	height: 30px;
+	border-bottom: 1px dashed #E8E8E8;
+	background: none;
+	
+}
