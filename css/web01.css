@@ -1,0 +1,36 @@
+#main-wrapper{
+	height: 1500px;
+}
+.containbox .leftbox{
+	width: 880px;
+	height: auto;
+	border:1px solid #ADADAD;
+	text-align: center;
+}
+.containbox .leftbox .art_span span{
+	display: inline-block;
+	margin-right: 20px;
+}
+.containbox .leftbox .art_con{
+	padding: 20px 20px;
+	text-align: left;
+}
+.containbox .leftbox .art_con p{
+	margin: 10px 0;
+	font-size: 16px;
+}
+.containbox .leftbox .art_con ol{
+	margin: 10px 0;
+	font-size: 16px;
+	color: #08c;
+}
+.containbox .leftbox .art_con ol p{
+	color: #000;
+	font-size: 14px;
+	margin: 10px 0;
+}
+.containbox .leftbox .art_con ol li{
+	color: #000;
+	font-size: 14px;
+	margin: 10px 0;
+}

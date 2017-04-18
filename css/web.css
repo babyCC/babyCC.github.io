@@ -123,12 +123,34 @@
 	opacity: 1;
 }
 
-.rightbox ul li .HTML{
+.rightbox ul li .Illustrator{
 	display: inline-block;
 	float: left;
 	width: 120px;
 	height: 66px;
 	background: url(../img/video_pic_00041.jpg);
+}
+.rightbox ul li .HTML{
+	display: inline-block;
+	float: left;
+	width: 120px;
+	height: 66px;
+	background: url(../img/video_pic_00042.jpg);
+}
+.rightbox ul li .photoshop{
+	display: inline-block;
+	float: left;
+	width: 120px;
+	height: 66px;
+	background: url(../img/video_pic_00043.jpg);
+}
+.rightbox ul li .seo{
+	display: inline-block;
+	float: left;
+	width: 120px;
+	height: 66px;
+	background: url(../img/seo.jpg);
+	background-size: 100% 100%;
 }
 .rightbox ul li span{
 	float: left;

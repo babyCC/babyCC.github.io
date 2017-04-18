@@ -161,7 +161,9 @@ h1{
     
 }
 
-
+#main-wrapper{
+	height: auto;
+}
 
 #main-wrapper section{
 	width: 1200px;
