@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="css/base.css" />
 		<link rel="stylesheet" href="css/web.css" />
 		<link rel="stylesheet" href="css/web01.css" />
-		<link rel="stylesheet" href="css/web03.css" />
+		<link rel="stylesheet" href="css/web05.css" />
 		<script type="text/javascript" src="js/jquery-3.1.1.js" ></script>
 		<script type="text/javascript" src="js/jquery.min.js" ></script>
 		<script type="text/javascript" src="js/index.js" ></script>
@@ -76,38 +76,42 @@
 					<div class="containbox">
 						<div class="leftbox">
 							<div class="art_title">
-								<h2>版式设计入门篇！四个超实用的网页设计构图原则</h2>
+								<h2>你必须懂得的CSS清除浮动方法，4种清除浮动方法</h2>
 							</div>
 							<div class="art_span">
 								<span>分类：WEB前端</span>
-								<span>发布时间：2017-04-18 23:17</span>
+								<span>发布时间：2017-04-18 21:10</span>
 								<span>作者：Vlin</span>
 								<span>来源：Vlin.me</span>
 							</div>		
 							<div class="art_con">
-								<p>任何平面设计都离不开排版，四个经典构图原则帮你入门版式设计！今天聊一聊常见的几类构图方式：对称平衡、不对称平衡、水平平衡以及垂直平衡，有分析有案例，强烈推荐学习，童鞋们快来感受一下吧！</p>
-								<h2>对称平衡</h2>
-								<p>如果你想在你的网页看上去美观和优雅，那么你应该做一个网站对称。这种效果很容易通过将类似的对象上的中心轴线的任一侧来实现。这可以通过相同的尺寸，基于网格的文本段落，或具有匹配文本相片的图像进行说明。这里有一对遵循这一格式的网站设计实例。</p>
-								<img src="img/p1.jpg" style="margin: 50px 50px;"/>
-								<img src="img/p2.jpg" style="margin: 50px 50px;"/>
-								<p>您可以轻松地在网上找到各地的许多中心的布局，实际上，对称性设计被认为是最赏心悦目的设计。这也是大多数人的典型思维模式。
-当然，当你准备采用对称性设计的时候，更多的时候它并没有你想象中那么肤浅简单。考虑到这点，你不妨以平面配色方案开始。如果你是新手，可以尽量多运用白色，直到你有足够的能力创造你自己的设计。
-毕竟这样的设计最赏心悦目，所以大多数人都喜欢干净简洁并且完美对称的网页。但是更多别出心裁的设计师会采用一些更加新颖的一些更复杂的设计布局。</p>
-								<h2>不对称平衡</h2>
-								<p>不对称平衡带来一种自由随意的感觉。尽管有时候看上去不是那么自然，但是它还是经常在网页设计中得到实用。你可以看到不对称平衡常常运用在一些大的高清图片作为页面背景，主体远离了中心轴线的情况，目的是为了把更醒目的标题留在中间。</p>
-								<img src="img/p3.jpg" style="margin: 50px 50px;"/>
-								<img src="img/p4.jpg" style="margin: 50px 50px;"/>
-								<p>它的设计的主要目的是移位到左边或右边（或顶部或底部）。因此，如果您决定要用不对称功能，你应该准备好多次的试验，以避免混淆网站的访问者。
-无论什么类型的对称，核心就是你要让整体平衡。</p>
-								<h2>水平平衡</h2>
-								<p>水平平衡是网页最经典的页面布局。大部分人都习惯从左向右阅读，所以左右布局也是最自然的一种布局方式。</p>
-								<p>这是最经典的一种布局设计，如果你的客户比较传统，那么你的设计也应该简单明了。这里有个案例。</p>
-								<img src="img/p5.jpg" style="margin: 50px 50px;"/>
-								<h2>垂直平衡</h2>
-								<p>垂直结构用于头部和底部的元素非常相似的情形。这样的布局往往运用于小图片的展示，比如下面的例子：</p>
-								<img src="img/p6.jpg" style="margin: 50px 50px;"/>
-								<h2>结论</h2>
-								<p>平衡是网页设计中最重要也是最容易忽略的东西。视觉上的平衡可以通过对界面元素的布局来调和，比如选择最合适的配合，元素的大小和位置。有的时候，也需要大胆创新，不要拘泥于传统。</p>
+								<p>做前端开发我们都不得不使用float浮动属性，但是如果使用了浮动，由于浮动本身的特性，难免会遇到父级元素塌陷的情况，不能自适应高度。</p>
+								<p>假设了有三个盒子对象，一个父级里包含了两个子级，父级元素没有设置固定高度，子级一个使用了float:left（左浮动）属性，另外一个子级使用float:right（右浮动）属性，这种情况的话父级元素的高度就必定不能被子内容而撑开。</p>
+								<h2>场景</h2>
+								<p>三个盒子对象：</p>
+								<img src="img/j1.jpg" style="width: 830px;"/>
+								<p>设置了浮动之后，父级元素不能被撑开，如图：</p>
+								<img src="img/j2.jpg" style="width: 830px;"/>
+								<p>我们所希望的效果：</p>
+								<img src="img/j3.jpg" style="width: 830px;"/>
+								<p>这种情况在我们的工作中特别常见，我们可以通过四种方法清除浮动。</p>
+								<h2>方法一</h2>
+								<p>使用一个空标签</p>
+								<img src="img/j4.jpg" style="width: 830px;"/>
+								<p>clear的 CSS样式如下：</p>
+								<img src="img/j5.jpg" style="width: 830px;"/>
+								<h2>方法二：</h2>
+								<p>给父元素设置display:inline-block属性：</p>
+								<img src="img/j6.jpg" style="width: 830px;"/>
+								<h2>方法三：</h2>
+								<p>给父元素设置overflow:auto或hidden属性：</p>
+								<img src="img/j7.jpg" style="width: 830px;"/>
+								<h2>方法四：</h2>
+								<p>给父元素添加类名clearfix，利用css伪类（比较常用，例如bootstrap框架使用的就是这种方法）</p>
+								<img src="img/j8.jpg" style="width: 830px;"/>
+								<p>HTML标签如下：</p>
+								<img src="img/j9.jpg" style="width: 830px;"/>
+								<p>好啦，以上就是清除浮动的几种方法，不知道童鞋你学会了么？</p>
 							</div>
 								
 								

@@ -34,3 +34,9 @@
 	font-size: 14px;
 	margin: 10px 0;
 }
+.pagebox{
+	width: 200px;
+	height: 60px;
+	margin: 0 auto;
+	background: #0000FF;
+}
