@@ -534,7 +534,9 @@ footer{
         padding-left: 0;
     }
     .btn-ground .add-shoping{
+    	display: inline-block;
         width: 140px!important;
+        
     }
     .btn-ground .buy-now{
         width: 70px!important;

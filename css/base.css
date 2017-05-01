@@ -115,6 +115,7 @@ h1{
 
 #header-wrapper .navbox ul li.subnav {
 	position: relative;
+	z-index: 99;
 }
 #header-wrapper .navbox ul li.subnav .subnav-box{
 	display: none;
@@ -146,6 +147,7 @@ h1{
 }
 #header-wrapper .navbox ul li.subnav:hover .subnav-box{
 	display: block;
+	z-index: 99;
 }
 
 

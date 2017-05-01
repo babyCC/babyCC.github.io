@@ -1,0 +1,42 @@
+#main-wrapper{
+	background: #FFFFFF;
+}
+.mainbox{
+	width: 1200px;
+	height: auto;
+	margin: 20px auto;
+	
+}
+.example1{
+	/*position: relative;*/
+	display: inline-block;
+	margin: 0 8px;
+	width: 380px;
+	height: 400px;
+	background:powderblue;
+	text-align: center;
+	
+	
+}
+.intro1{
+	
+	/*position: absolute; */
+	width: 380px; 
+	height: 400px; 
+	/*top: -100px; 
+	left: -1px; */
+	z-index: 99; 
+	opacity: 0;
+	background: rgb(235,137,112);
+	padding-top: 300px;
+	
+}
+.intro1 h2{
+	font-family: "arial";
+    font-size: 36px;
+	color: #FFFFFF;
+}
+.intro1 p{
+	    font-size: 14px;
+	color:#438199;
+}

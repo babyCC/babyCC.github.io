@@ -71,6 +71,7 @@ h1{
 	text-align: center;
 	background: #FFFFFF;
 	opacity: 0.9;
+	z-index: 99;
 	
 }
 
@@ -126,7 +127,7 @@ h1{
 	background: #000000;
 	border-radius: 5px;
 	opacity: 0.8;
-	z-index: 2;
+	z-index: 9999;
 	text-align: center;
 }
 #header-wrapper .navbox ul li.subnav .subnav-box li{
@@ -146,6 +147,7 @@ h1{
 }
 #header-wrapper .navbox ul li.subnav:hover .subnav-box{
 	display: block;
+	z-index: 999;
 }
 
 
