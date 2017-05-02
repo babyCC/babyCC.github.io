@@ -36,21 +36,19 @@ table { border-spacing:0; border-collapse:collapse;}
 	position: relative;
 	width: 100%;
 	height: auto;
-	margin: 0 auto;
-	
-	/*text-align: center;*/
-	
-	
+	margin: 0 auto;	
 }
 #header-wrapper header{
-	
-	
-	background: url(../img/bg01.png) no-repeat;
 	width: 100%;
 	height: 100px;
 	background-size: 100% 130%;
 	opacity: 0.25;
-	margin: 0 auto;  
+	margin: 0 auto; 
+	background: -webkit-linear-gradient(gray, white); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(gray, white); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(gray, white); /* Firefox 3.6 - 15 */
+    background: linear-gradient(gray, white); /* 标准的语法 */
+ 
 }
 
 h1{

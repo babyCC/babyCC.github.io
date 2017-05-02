@@ -1,8 +1,12 @@
 @charset "utf-8";
 /**基本格式开始***************/
-
+#main-wrapper{
+	background: #FFFFFF;
+	margin: 50px 0;
+	border: none;
+}
 .bodyCon07{width:1200px;height: auto; margin:0 auto;}
-.bodyCon07 .teacher{width:1200px;height:600px;position:relative;margin:0 auto; }
+.bodyCon07 .teacher{width:1200px;height:600px;position:relative;margin:0 auto;overflow: hidden; }
 .bodyCon07 .teacher .teacherPic{width:1200px;height:600px;position:absolute; background:url(../img/sirendingzhi1.jpg)  no-repeat;background-size: 100% 100%!important;}
 .bodyCon07 .teacher .teacherPic .content{width:240px;height:600px;float:left;position:relative;}
 .bodyCon07 .teacher .teacherPic .content .txt{width:176px;height:100px;background:rgba(18,21,44,0.5); position:absolute;left:0px;bottom:0px;padding:0 12px;border-top:2px solid #FFE000;font-family: 微软雅黑;font-size: 12px;}
