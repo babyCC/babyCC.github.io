@@ -354,32 +354,6 @@ section.intro .introc{
 	padding: 0 2em 0 2em;
 	
 }
-/*#main-wrapper header{
-	position: relative;
-	width: 1200px;
-	height: 100px;
-	
-	margin: 0 auto;
-}*/
-/*#main-wrapper header .liner{
-	width: 1200px;
-	height: 50%;
-	border-bottom: 1px solid #BEBCBC;
-}
-h2{
-	     
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 100px;
-	
-	background: url(../img/bg02.png);
-	background-size: auto;
-	text-align: center;
-	vertical-align:middle;
-	
-	
-}*/
 
 #main-wrapper section{
 	width: 1200px;
@@ -388,11 +362,6 @@ h2{
 }
 #main-wrapper .container{
 	display: inline-block;
-	/*float: left;*/
-	/*float: left;
-	*/
-	/*margin-right: 36px;*/
-	
 	width: 31%;
 	height: 500px;
 	background: #fff;
@@ -413,6 +382,7 @@ h2{
 	-moz-transform:scale(1.04);
     -webkit-transform:scale(1.04);
     -o-transform:scale(1.04);
+    /*-ms-transform: scale(1.04);*/
     transform: scale(1.04);
     transition: 1s all;
 
@@ -421,6 +391,7 @@ h2{
 	-moz-transform:scale(1.04);
     -webkit-transform:scale(1.04);
     -o-transform:scale(1.04);
+   /* -ms-transform: scale(1.04);*/
     transform: scale(1.04);
     transition: 1s all;
 
@@ -643,9 +614,7 @@ h2{
 .service div{
 	width: 55px;
 	height: 33%;
-	
-	text-align: center;
-	
+	text-align: center;	
 }
 .service div:hover{
 	background: #252122;
@@ -686,7 +655,7 @@ h2{
 	background-size: 100% 100%;
 	transition:all 0.5s;
 	-moz-transition:all 0.5s;
-	-webkit-transition:all 0.5s
+	-webkit-transition:all 0.5s;
 	-o-transition:all 0.5s;
 	
 }
