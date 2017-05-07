@@ -1,5 +1,13 @@
+#main-wrapper{
+	height: 500px;
+}
+
 #main-wrapper .mainbox{
-	width: 1200px;
+	width: 600px;
 	height: 400px;
-	text-align: center;
+	margin: 0 auto;
+	line-height: 30px;
+}
+#main-wrapper .mainbox p{
+	font-size: 16px;
 }

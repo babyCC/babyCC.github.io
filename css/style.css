@@ -80,6 +80,7 @@ h1{
 	
 }
 #header-wrapper .navbox ul li{
+	
 	display: inline-block;
 	float: left;
 	width: 100px;
@@ -96,6 +97,7 @@ h1{
 #header-wrapper .navbox ul li:hover{
 	background:#eee ;
 	border-radius: 5px;
+	transition: all 0.6s;
 	
 }
 #header-wrapper .navbox ul li a:hover{
@@ -146,6 +148,7 @@ h1{
 #header-wrapper .navbox ul li.subnav:hover .subnav-box{
 	display: block;
 	z-index: 999;
+	transition: all 0.7s;
 }
 
 

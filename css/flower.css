@@ -7,6 +7,9 @@
 	margin: 20px auto;
 	
 }
+.navbox{
+	width: 1200px!important;
+}
 .example1{
 	/*position: relative;*/
 	display: inline-block;
