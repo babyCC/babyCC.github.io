@@ -18,7 +18,7 @@ table { border-spacing:0; border-collapse:collapse;}
 /*layout*/
 /*head start*/
 .wrap{
-	min-width: 1200px;
+	/*min-width: 1200px;*/
 }
 .header-bg {
 	/*width: 100%;*/
